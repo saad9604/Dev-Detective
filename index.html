@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dev Detective</title>
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="icon" type="image" href="assets/favicon-737fb406.ico" />
+    <script type="module" crossorigin src="assets/index-fc681d7a.js"></script>
+    <link rel="stylesheet" href="assets/index-6f04886c.css">
+  </head>
+
+  <body class="overflow-x-hidden scrollbar-thin scrollbar-thumb-lmText">
+    <div
+      class="wrapper transition ease-in-out delay-150 scroll-smooth min-w-[100vw] min-h-[100vh] h-full text-lmText font-Montserrat"
+    >
+      <div class="md:w-[973px] ml-auto mr-auto relative">
+        <header
+          class="md:flex items-center justify-between Header transition ease-in-out delay-150 w-[300px] md:w-[973px] pt-10 ml-auto mr-auto mb-10"
+        >
+          <h1
+            class="headerText cursor-pointer text-[20px] md:text-[26px] font-bold tracking-wider text-center"
+          >
+            DevDetective
+          </h1>
+
+          <nav class="hidden md:flex" id="navBar">
+            <ul class="flex items-center gap-3">
+              <li>
+                <a href="#ourFeaturesSection" class="hover:font-semibold"
+                  >Our Features</a
+                >
+              </li>
+              <li>
+                <a href="#searchPage" class="hover:font-semibold">Search</a>
+              </li>
+              <li>
+                <a href="#aboutUsSection" class="hover:font-semibold"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#contactUsSection" class="hover:font-semibold"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        <main class="">
+          <!-- Hero-Section -->
+          <div
+            class="md:w-[973px] heroSection md:mt-32 flex md:gap-2 md:flex-row flex-col-reverse items-center justify-between mt-auto mb-auto"
+          >
+            <div class="w-[1/2] p-10 md:p-0">
+              <h1 class="text-2xl font-bold mb-4 text-center md:text-start">
+                Discover the <br class="md:hidden" />
+                Power of DevDetective
+              </h1>
+              <p class="mb-6 text-justify md:text-start">
+                Find the GitHub profiles and repositories you need with
+                lightning-fast search. With DevDetective, you can easily search
+                and discover GitHub users and repositories based on username,
+                keywords, or programming language. Our platform provides
+                important data like followers, following, repositories created,
+                and social links, so you can quickly connect with other members
+                of the GitHub community.
+              </p>
+              <p class="mb-6 text-justify md:text-start">
+                Join thousands of satisfied users who have found the profiles
+                and repositories they were looking for with DevDetective. With
+                our intuitive user interface and powerful search algorithm,
+                you'll be able to navigate and explore the GitHub community like
+                never before. Sign up today and take your GitHub experience to
+                the next level!
+              </p>
+              <a href="#searchPage">
+                <button
+                  id="getStartedBtn"
+                  class="btn flex ml-auto mr-auto md:ml-0 md:mr-0 bg-lmText hover:bg-lmTextAlt rounded-lg justify-center text-white font-bold p-4 mt-4"
+                >
+                  Start Searching Now
+                </button>
+              </a>
+            </div>
+            <img
+              class="hero-cat w-[1/2]"
+              alt="Detective Cat"
+              src="assets/githubCat-removebg-preview-5f5bce02.png"
+              width="300px"
+            />
+          </div>
+
+          <!-- Our Features -->
+          <div
+            class="md:w-[973px] mt-24 flex flex-col items-center justify-center howItWorks p-10"
+            id="ourFeaturesSection"
+          >
+            <h2 class="text-3xl font-bold mb-16">Our Features</h2>
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+              <div class="flex-1">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nO2Wz0pCQRjFf2i6ydop9ArZO1T7FhrlK0TSH+spxNcw61GCaJMFJZn71rqolfHBufBtwjtzLxLkgYELM+ecud98cxhY4Q+hDLSAW+ANmGnY90BztiZXHAIfwHzBGAPNPAwLQM8JPwEXwDawrlEHLoGhW9cVNxo9CX0BJwvEbO5UaxPz6PLOJbQbwNtz5o1Q07I7U/vTULTFfQdKIcSWO9OYsyoCz9I4CiHeiXROPDrSuAkhjUSy7o1FXRp2z1NjKlIlg/GGNKbLNt6MMR7lUOod19mpMRDJEikW19Lox1ynYYbr9CKN49AAGYtoMRiKM3EnwFooueki02IwLfaBb3EPiETXmbdVwt9Q1J8mpp9ANda44MznisGOwqGiYd175c40MU3W18iAhq7FoofAROWtuqzObF5S4Fv2vioYZtpQX93rG6mWp3koqu5lYpvd4r+Y11zZH5ZpnJg/AvfLNl4Bww/dcoIlpDH7/gAAAABJRU5ErkJggg=="
+                  width="50px"
+                  class="mx-auto mb-4"
+                />
+                <h3 class="text-lg text-center font-bold mb-2">Search</h3>
+                <p class="text-justify md:text-left">
+                  Enter your search query to find GitHub users and repositories
+                  that match your criteria. You can search by username, keyword,
+                  or repository name.
+                </p>
+              </div>
+              <div class="flex-1">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAEvUlEQVR4nO2ba4hVVRTHf1fNMZtImwopayqL8lURRcFYCRVFFESEWoQQoRRJUViSH1SkoKiw+lBGTdHjg0gvNDAbVMxqelOmFeWrbHpRmYNmWs2NHf8Di8M+c+89Z9/ruTPnD5u5d5/9/N911l57rTVQoECBgDgbWAt8DlwJDKVxOAa4HXgOmNjAeTkVWAB8BZRj5XvgQWByneY+FJgBvA78beZ9njqjDZgNvA30eTbuK5uBRUB7xrmHAFOAR4FfE+Z6iTpgFHATsAb4xzPpx8CT5vt7wHoPQa7vG8ANwGE1zD8euA/41jP3b8DjwM7QBIwArpJI7fVMvAO4Hzhd7S80z55S3Vi9m596+v8JLNccwzzzj+5H0vYDK4GZehUcNoYgoARcLmXS61l0D7AEONfT10eAxUQR9lPCuE6szxchjpgDnnYfidCjPeMHIeBhz6S7gE7g4gqavRIBEQ4xm9xXhf7YIv1xSoW1ByGgW4Ps0wKvBlqq7FstAXHdMgt4KybmvwNLgQ5JZTUISsCqFH3TEGCxxvQ/MkX/pifgTdO/NUX/ggAKCaB4BSh0AIUSJAO6i1OA4hgsF3YAhSG0KoX+KCxBClOYUHcBdws8Uw4V5wYb0KbwOGCu/A7lBM/RauAW4LiBREC73G3VOlZd+Vd9jm1mAoYAiz0uL+da36QNTgOuB+6Qw3NHrO0eSUTTEdAKvBrzEj8DnFbF+OcAr8WIeEIutqYgoAXYYNq4BU9KGOtw+QCHe55dAHxnxlkut1nuCXjWPF+pTVp0qN/Ppt26hLnGmLW6sjDvBNxonq2P/bJOoa1IUHouzpiEI4Av1M4p0q15JWCk4oRlRXaOigVUe2JH3ivAncB0BT0rxSZ3m765JOAeU3+dqT8xJu6dEu1aMT8mNbkj4GvVfWJ8/O7v+6b9rRnW7CTsh7wSMMnU3WbazjD1LoSeFUvMeE6f5IaAu02dE/kI76quR79gVkyNRaZzQ8AL+v6jaTdGJq2rv5dwkexo7i8PBgFtwANmERu00bUmfyDCpabdRYRDlLewvVEEtADXyDzd7znDDyh5wX3uMv1mmjYnEQ5/maO2bgSUZLEtVQQ3vulfJO6++ggdyunZFjiRqtdYmcEJOAGYZ440W/7QDe4Sc8y5RIenTfKSM1IsxqYMgPanA6JrtUulCULAKIlrV0KuT5ee95frs8iYqsdTP0xJMLZSE9Cb8F5/qPO8koka4QzTdw71w0Pmh3EKOTW6PZveqfyds1KOuU3jfFBDtket4h9liLlTJxM6NdBufZ5ag1MyCQsMmdcSHnPN+O6VzIThwHkm9SwEWk1m2FbpllBoN6fRxgan59aEm82vtDohLzANsZ+ZcS8jxygBy8xil2WUsrbY5p0VmnuMVKKjPVEq5f4lOUe3mHH2BshBbhhGxyJA7qh9TIZRJTjP8YvmImXLN1WOkQsMU0aq3UifjsnF8h9eof85mCXx3hTbsLP771LqbdlcguyVO/cYL5d2uYbSpz4nm3GamgQUBF0ol5kvTOasu3fkXEnSGU1PglWUkxX8cLfGCTXkKg8YErKgIIGChP8x6CWhBDzSrHZCvUh4mUGIkgIvZR21gxYjDvYCCpBD/Ac5P+3xlA5UnQAAAABJRU5ErkJggg=="
+                  width="50px"
+                  class="mx-auto mb-4"
+                />
+                <h3 class="text-lg text-center font-bold mb-2">
+                  Explore Results
+                </h3>
+                <p class="text-justify md:text-left">
+                  View detailed information about each user or repository,
+                  including followers, following, repositories created, and
+                  social links. Use our intuitive interface to easily navigate
+                  and explore the GitHub community.
+                </p>
+              </div>
+              <div class="flex-1">
+                <img
+                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAC1klEQVR4nO2ZT2uTQRDGf9g2igfxIpSiBfWgJxG0IPZWFRQR0Yt+AQ+KIIIgFDy2SevBg5/AerFQCvYLCP6pVgQp6sFS/yCmrR60tlawYCMLz8KybPRN8iZ5V/PAQjrzzswzebc7sxNo4f9BDhgC5oAikJcsOhSAkrcGiRBFkT8I9OqzkUWHzyJ/DDisz0b2T2ytAhGiXf/gNom8ZNGipBU9Sq1EMlbIan0juWr5pF3IHgD3a7AvVMsna4WsWC0fa9jrGK4CXTQeXYrt8/mYxNg9+921BFwBOhKSOAXc1d7+AVyoIIEOxVoqw2UgiZOckjFvZh4YBsYdJ6+Avj/YrwNGAsG/AjeA7r/E71MMazcuDgt6EwO1dtFHgRknwCiwNfDceekXgWva2/ccuy/AnoCd8TXqPDejmHXBeqAf+K5gy8BV7xt6Jt1pz3YTcFO6CUeekw/jqyTf/YpVd5jtMeZ8e48d3TdgDdgQsNsZ6IKfOH7GEmy9uuCI9vPDQPseSmRL4Ph8JB/GV6bwVGT3B3T2+JwiAiyL7PaAbldMF6xZkb0U0F2W7jUR4ITIvvOKpzmdPkh3nEjwXIRvObLbkpnjORrsE2lzDFusSbaXiLA5cA+xfxtd5pEDzgFvRHrS0U1K9lbPZHbqeMA5scyaBnZ4VX3a0c/Kpqno9lqJ3cCKCL4EzgJtATsjOwO80LMrsrXY1qgWZaNa/FWvzbBd650yCfho07O2i7aYk++8YtUFJ4H3Cv7Lu9zMl7kAJVnG1mJQvkuKZWKmMrVY0KVmwgls6kBPYMBQbSL+YKLHuQrYlv868CmNKYq9KF1MuHVqRZtiLZbhUvUU5SfQSePRqdipTVESTS3KYMq7eFWKYppTlERTizLwK3ylyKcxRUljalFrIrmU+TQtkcyglUhW0K7Cat/IUKw/vQ0HThsji/rn6UMxTU/qXVibhrQLa9OQmULWAk3Ab9ZbWcaJ7LL3AAAAAElFTkSuQmCC"
+                  width="50px"
+                  class="mx-auto mb-4"
+                />
+                <h3 class="text-lg text-center font-bold mb-2">Connect</h3>
+                <p class="text-justify md:text-left">
+                  Connect with other GitHub users, follow repositories, and
+                  share your own projects. With DevDetective, it's easy to take
+                  your GitHub experience to the next level!(Coming Soon)
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Search Page -->
+          <div
+            class="md:w-[973px] mt-24 flex flex-col items-center justify-center searchPage text-center p-10"
+            id="searchPage"
+          >
+            <h1 class="text-3xl text-center font-bold mb-10">
+              Start Searching
+            </h1>
+            <p class="text-md text-justify">
+              Discover GitHub users and repositories with our powerful search
+              feature. Use the search bar to find what you're looking for,
+              whether it's a specific
+              <span class="text-lmText font-bold">Username</span>, a relevant
+              <span class="text-lmText font-bold">Keyword</span>, or a specific
+              <span class="text-lmText font-bold">Repository</span>. Our search
+              algorithm will quickly and accurately locate the profiles and
+              repositories that match your search criteria.
+            </p>
+
+            <div class="flex flex-col md:flex-row gap-4 justify-center mt-8">
+              <button
+                id="usernameBtn"
+                class="flex justify-center w-[300px] md:w-auto ml-auto mr-auto md:ml-0 md:mr-4 bg-lmText hover:bg-lmTextAlt rounded-lg items-center text-center text-white font-bold p-4"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADwAAAA8CAYAAAA6/NlyAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+0lEQVR4nO2avS9kYRSHH5GImpD4zP4RVApCJUG0m+0Fy2wpIlH4D4gCu9lCqRDNri10i3+Bteh8VCuMhDAy8iZHIpPgrvsezuU8ya+5mY/7zHvmvueeGXAcx3GcZmAU+AVsA+eSbTk2AjS9hY+pAZgHCkDxidwAS8AHMko/kE8gWpozoI+M8UVW7H9l7692jgyt7E0K2fvS5le68Zll/Fh512OY7xFl7/IVw1tPQUG4IJVjjpyC7F0+Y5BVReEfGOSvonDoyMyRVxQOr22OonLMUXxvwnlF2VMM8kdReAuDrL63bWlEUXgIgzQptZbXVlvLwDcF4TmMj3TOIl+d6zBOd6TSDgOAXjJCLsKIJ0w5M0XfM8s7lHEPGaUGmJYrbZJVXczCdzYJjXIT/1O6prxkS5qKYctbj+M4jvMWKAdagQFgBliT6eMxcCE5kmNrsl+Hx7bIczNBreypK8BJitbyH7AMDErzYooK4JNMPK6V7odDw/JR3uvVqAYmgEMFyYdyAIwDVS8pWiE/eKcp2bQJ7z0GVGrLtgP7ryhaml2gTUO0DJhSmlmlTTinSTnHaLKzBsSeykIs6VEDMkkTRsWp2TMgkjQ7MYQvDIgkTfh3X2o2DYgkze8Ywp1KHVTsXMm2GYUuYAO4NCBWmnBO60BHLFnHcRzHcVDhFpGw1GEF+nhKAAAAAElFTkSuQmCC"
+                    width="25px"
+                    class="mr-1"
+                    alt="User Icon"
+                  />
+                  <p class="font-bold">Search by Username</p>
+                </div>
+              </button>
+
+              <button
+                id="keywordBtn"
+                class="flex justify-center w-[300px] md:w-auto ml-auto mr-auto md:ml-4 md:mr-4 bg-lmText hover:bg-lmTextAlt rounded-lg items-center text-center text-white font-bold p-4"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="data:image/png;base64,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"
+                    width="25px"
+                    class="mr-1"
+                    alt="Keyword Icon"
+                  />
+                  <p class="font-bold">Search by Keyword</p>
+                </div>
+              </button>
+
+              <button
+                id="repositoryBtn"
+                class="flex justify-center w-[300px] md:w-auto ml-auto mr-auto md:ml-4 md:mr-0 bg-lmText hover:bg-lmTextAlt rounded-lg items-center text-center text-white font-bold p-4"
+              >
+                <div class="flex items-center">
+                  <img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGAAAABgCAYAAADimHc4AAAACXBIWXMAAAsTAAALEwEAmpwYAAACSElEQVR4nO3bPWtUQRjF8b9Y6BdQ18LvINj4klLERlGx0nwBsREbu4AoYmGMvY0EET9CRBGx9SW9SdogUYmNGKLxkQtTxC5mB+Y5s+cHp585c2f27t29YGZmZmZmZmZmZmZmNr5DwDRwSyzTwEHlC2AvcA/YAEI0G8DdMhcpe4CnCQqMSplHzOUEpUXlXETI6wSFReW8RMj3BIVF5awjJDqNjNZFhRegfVnhHdC+sPAR1FdktC4qvADty4pJ3gHrCcqKyvmGkFcJCovKeYGQSwkKi8q5gJj5BKVFpTxB0PAM/Q7wM0GBscsMY7+t+HvAdgeAq8AMcF8kM8CVMnYzMzNpR4Ap4LRIpsqY5Z0FFhPcTsYu8xE4g6jrwJ8EJcaY2QKuIeYY8DtBeVEpv4CjCHmeoLSonGcI+ZygsKicVYRsJSgsKmeYk4zoNDJaFxVegPZlhXdA+8LCR1BfkdG6qJj0BfiRoKyonGFOMj4kKCwq5x1CbiYoLCrnBkL2l0e50UneA/sQfD/4bYLyYsy8UX5feHhd9TzwGFgoL7opZKGM+VyZg5mZmdn/OQw8AlaAzQS3lLHDDGNdBuaAkeqinwK+JigzxswX4CSCV34P5ce2RZDaCXMJSovKmUXIcoLConKWEKL0gRs7zDAnGdFpZLQuKrwA7csK74D2hYWPoL4io3VRMekL4NvQxnr8IvYJIQ8TFBaV8wAho/IAKzrJWvmXh5QTnSzCGnAcUaNyHC2JfTBvljN/VvHKNzMzMzMzMzMzMzPjX38BEzoGMTN7BsIAAAAASUVORK5CYII="
+                    width="25px"
+                    class="mr-1"
+                    alt="Repository Icon"
+                  />
+                  <p class="font-bold">Search by Repository</p>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- search form for Username -->
+          <div
+            class="hidden searchBarUsername transition ease-in-out delay-150 w-[350px] ml-auto mr-auto md:w-[773px] p-2 mt-10 mb-10 bg-lmBg rounded-2xl flex justify-evenly drop-shadow-xl shadow-lmShadow"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNUlEQVR4nO2WvUoDQRSFv5ewUBOxtIiVKfUBBA0+R0zis9gpBgtLe3/eJCv2inZu7ExQFm4giDN75u5GUuTAKXaZ4eP+zJ2BlZZQW0AfeAQy4NOc2b8e0KwTuAlcAhPgu8RT4BbYrgo9AcYC8LdzoOOFnlkEqdD56AeeSKcVoPNwOfKGM72xtG8o4OsaoTNfKUemrHvfgD1gPwE8sUwG1RegLVvbToz6NAZ+EKEt+04B38XAz4FN78CurdkBXh11zmLgPLCpqKmqUO3zRYMPPOAnMdUvjlSPlrK5egs8Tt0YuCkOkHakln/5q2yAFBo66lfmC8SLP9TdHn8A64g6FF8cyrV4rEJnGtTwEChmv0sdZ9qL9B5RUWvAuXWmEuVNSk0VNexqu7cpNDaPbDh0lSOzEv+tH+YHlQGe3ZAGAAAAAElFTkSuQmCC"
+              width="30"
+              height="30"
+              class="backBtn object-contain cursor-pointer"
+              loading="lazy"
+            />
+            <input
+              type="search"
+              id="searchInputUsername"
+              placeholder="Enter a Github username..."
+              class="transition ease-in-out delay-150 w-[200px] md:w-[450px] bg-lmBg focus:outline-none placeholder:text-lmText"
+            />
+
+            <button
+              id="searchByUsername"
+              class="bg-lmText hover:bg-lmTextAlt rounded-lg text-white font-bold w-20 md:w-28 h-14"
+            >
+              Search
+            </button>
+          </div>
+
+          <!-- search form for Keywords -->
+          <div
+            class="hidden searchBarContainer transition ease-in-out delay-150 w-[350px] ml-auto mr-auto md:w-[773px] p-2 mt-10 mb-10 bg-lmBg rounded-2xl flex justify-evenly drop-shadow-xl shadow-lmShadow"
+          >
+            <img
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNUlEQVR4nO2WvUoDQRSFv5ewUBOxtIiVKfUBBA0+R0zis9gpBgtLe3/eJCv2inZu7ExQFm4giDN75u5GUuTAKXaZ4eP+zJ2BlZZQW0AfeAQy4NOc2b8e0KwTuAlcAhPgu8RT4BbYrgo9AcYC8LdzoOOFnlkEqdD56AeeSKcVoPNwOfKGM72xtG8o4OsaoTNfKUemrHvfgD1gPwE8sUwG1RegLVvbToz6NAZ+EKEt+04B38XAz4FN78CurdkBXh11zmLgPLCpqKmqUO3zRYMPPOAnMdUvjlSPlrK5egs8Tt0YuCkOkHakln/5q2yAFBo66lfmC8SLP9TdHn8A64g6FF8cyrV4rEJnGtTwEChmv0sdZ9qL9B5RUWvAuXWmEuVNSk0VNexqu7cpNDaPbDh0lSOzEv+tH+YHlQGe3ZAGAAAAAElFTkSuQmCC"
+              width="30"
+              height="30"
+              class="backBtnKeyword object-contain cursor-pointer"
+              loading="lazy"
+            />
+            <input
+              type="search"
+              id="searchInputKeyword"
+              placeholder="Enter a Github name..."
+              class="transition ease-in-out delay-150 w-[200px] md:w-[450px] bg-lmBg focus:outline-none placeholder:text-lmText"
+            />
+
+            <button
+              id="searchByKeyword"
+              class="bg-lmText hover:bg-lmTextAlt rounded-lg text-white font-bold w-20 md:w-28 h-14"
+            >
+              Search
+            </button>
+          </div>
+
+          <!-- search form for Repository for medium+ devices-->
+          <div
+            class="hidden searchBarRepository transition ease-in-out delay-150 w-[350px] ml-auto mr-auto md:w-[773px] p-2 mt-10 mb-10 bg-lmBg rounded-2xl flex flex-col justify-evenly drop-shadow-xl shadow-lmShadow"
+          >
+            <div class="flex justify-evenly w-full p-2">
+              <img
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABNUlEQVR4nO2WvUoDQRSFv5ewUBOxtIiVKfUBBA0+R0zis9gpBgtLe3/eJCv2inZu7ExQFm4giDN75u5GUuTAKXaZ4eP+zJ2BlZZQW0AfeAQy4NOc2b8e0KwTuAlcAhPgu8RT4BbYrgo9AcYC8LdzoOOFnlkEqdD56AeeSKcVoPNwOfKGM72xtG8o4OsaoTNfKUemrHvfgD1gPwE8sUwG1RegLVvbToz6NAZ+EKEt+04B38XAz4FN78CurdkBXh11zmLgPLCpqKmqUO3zRYMPPOAnMdUvjlSPlrK5egs8Tt0YuCkOkHakln/5q2yAFBo66lfmC8SLP9TdHn8A64g6FF8cyrV4rEJnGtTwEChmv0sdZ9qL9B5RUWvAuXWmEuVNSk0VNexqu7cpNDaPbDh0lSOzEv+tH+YHlQGe3ZAGAAAAAElFTkSuQmCC"
+                width="30"
+                height="30"
+                class="backBtnRepo object-contain cursor-pointer"
+                loading="lazy"
+              />
+              <input
+                type="search"
+                id="searchInputRepository"
+                placeholder="Enter a Github repository name..."
+                class="transition ease-in-out delay-150 w-[200px] my-1 md:w-[450px] bg-lmBg focus:outline-none placeholder:text-lmText"
+              />
+
+              <button
+                id="searchByRepository"
+                class="bg-lmText hover:bg-lmTextAlt rounded-lg text-white font-bold w-20 md:w-28 h-14"
+              >
+                Search
+              </button>
+            </div>
+
+            <div class="text-center">
+              <select
+                id="languageFilter"
+                class="mr-4 bg-lmBg md:text-[12px] text-[8px] text-center"
+              >
+                <option value="">All languages</option>
+                <option value="javascript">JavaScript</option>
+                <option value="python">Python</option>
+                <option value="java">Java</option>
+                <option value="go">Go</option>
+                <option value="ruby">Ruby</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- profile -->
+          <div
+            id="profileContainer"
+            class="hidden transition md:w-[773px] ease-in-out delay-150 relative mt-10 flex ml-5 mr-5 md:ml-auto md:mr-auto pt-10 bg-lmBg rounded-2xl drop-shadow-xl shadow-lmShadow"
+          >
+            <div
+              class="profileContent md:w-[580px] ml-auto flex flex-col gap-5"
+            >
+              <img
+                src="data:image/png;base64,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"
+                id="profileImage"
+                class="rounded-full border-4 border-lmTextAlt absolute md:top-5 md:left-10 top-10 left-5 md:w-[117px] md:h-[117px] w-[80px]"
+              />
+
+              <div
+                class="userInfo flex flex-col md:flex-row justify-between pl-[120px] md:pl-0 pr-10"
+              >
+                <div>
+                  <h2 id="name" class="font-bold text-lg md:text-2xl">
+                   Saad Sayyed
+                  </h2>
+                  <a
+                    id="userName"
+                    href="#"
+                    target="_blank"
+                    class="text-btn cursor-pointer"
+                    >@Adushaiq</a
+                  >
+                </div>
+                <p class="" id="date">Joined 23 Sept 2021</p>
+              </div>
+
+              <p
+                class="font-extralight pl-[22px] md:pl-0 mt-[20px] md:mt-0"
+                id="profileDesc"
+              >
+                This profile has no bio
+              </p>
+
+              <div
+                class="userStats transition ease-in-out delay-150 flex gap-7 md:gap-14 justify-evenly bg-lmText px-5 md:px-10 py-5 md:mr-10 ml-auto mr-auto rounded-xl"
+              >
+                <div class="repos flex flex-col items-center gap-3">
+                  <h2 class="text-[12px] text-lmBgContent md:text-sm">
+                    Repositories
+                  </h2>
+                  <p
+                    id="userRepositories"
+                    class="font-bold text-lmBgContent text-xl"
+                    data-userRepos
+                  >
+                    4
+                  </p>
+                </div>
+
+                <div class="followers flex flex-col items-center gap-3">
+                  <h2 class="text-[12px] text-lmBgContent md:text-sm">
+                    Followers
+                  </h2>
+                  <p
+                    id="userFollowers"
+                    class="font-bold text-lmBgContent text-xl"
+                    data-userFollowers
+                  >
+                    0
+                  </p>
+                </div>
+
+                <div class="following flex flex-col items-center gap-3">
+                  <h2 class="text-[12px] text-lmBgContent md:text-sm">
+                    Following
+                  </h2>
+                  <p
+                    id="userFollowing"
+                    class="font-bold text-lmBgContent text-xl"
+                    data-userFollowing
+                  >
+                    0
+                  </p>
+                </div>
+              </div>
+
+              <div
+                class="socials flex flex-col gap-4 md:gap-0 ml-7 md:ml-0 md:flex-row justify-between mr-10 pb-10"
+              >
+                <div class="flex flex-col gap-4 justify-between">
+                  <div class="location flex gap-2">
+                    <img
+                      src="assets/location-icon-521c4f3e.svg"
+                      loading="lazy"
+                      width="14"
+                      height="20"
+                      class="opacity-70 object-contain"
+                    />
+                    <p id="userLocation" class="opacity-70">Los Angeles</p>
+                  </div>
+
+                  <div class="socialMedia flex gap-2">
+                    <img
+                      src="assets/twitter-icon-4d5d3c39.svg"
+                      loading="lazy"
+                      width="14"
+                      height="20"
+                      class="opacity-70 object-contain"
+                    />
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      id="userSocial"
+                      class="cursor-pointer opacity-70 underline"
+                      >@Adushaiq</a
+                    >
+                  </div>
+                </div>
+
+                <div class="flex flex-col gap-4 justify-between">
+                  <div class="blog flex gap-2">
+                    <img
+                      src="assets/website-icon-a0db6979.svg"
+                      loading="lazy"
+                      width="14"
+                      height="20"
+                      class="opacity-70 object-contain"
+                    />
+                    <a
+                      id="userBlog"
+                      href="#"
+                      target="_blank"
+                      class="cursor-pointer opacity-70 underline"
+                      >https://www.google.com</a
+                    >
+                  </div>
+
+                  <div class="company flex gap-2">
+                    <img
+                      src="assets/company-icon-239d6fee.svg"
+                      loading="lazy"
+                      width="14"
+                      height="20"
+                      class="opacity-70 object-contain"
+                    />
+                    <p id="userCompany" class="opacity-70">Google</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- users stack container  -->
+          <div id="users-container" class="md:w-[773px] ml-auto mr-auto"></div>
+
+          <!-- Repositories Container -->
+          <div
+            class="repositoryConainer md:w-[773px] ml-auto mr-auto"
+            id="reposContainer"
+          ></div>
+
+          <!-- loading screen -->
+          <div
+            id="loadingScreen"
+            class="hidden transition ease-in-out delay-150 loadingScreen text-3xl text-center mt-40 mb-20"
+          >
+            <h2>loading...</h2>
+          </div>
+
+          <!-- error Screen's -->
+          <div
+            id="errorScreen"
+            class="hidden transition ease-in-out delay-150 bg-lmTextAlt text-center p-10 text-white rounded-xl md:w-[70%] md:ml-auto md:mr-auto ml-5 mr-5 mt-40"
+          >
+            <p>
+              <span class="font-bold text-red-500"> Error: </span> User Not
+              Found
+            </p>
+            <p>Please enter the correct Username.</p>
+          </div>
+
+          <!-- error Screen for Repo -->
+          <div
+            id="errorScreenRepo"
+            class="hidden transition ease-in-out delay-150 bg-lmTextAlt text-center p-10 text-white rounded-xl md:w-[70%] md:ml-auto md:mr-auto ml-5 mr-5 mt-40"
+          >
+            <p>
+              <span class="font-bold text-red-500"> Error: </span> Repository
+              Not Found
+            </p>
+            <p>Please enter a different name.</p>
+          </div>
+
+          <!-- pagination of Repo page -->
+          <div
+            class="hidden pagination text-lg text-center w-full mt-10 pb-10"
+            id="paginationBar"
+          >
+            <ul class="flex justify-center">
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-repo bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="1"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-repo bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="2"
+                  >2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-repo bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="3"
+                  >3</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-repo bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="4"
+                  >4</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-repo bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="5"
+                  >5</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- pagination of keyword page -->
+          <div
+            class="hidden pagination text-lg text-center w-full mt-10 pb-10"
+            id="paginationBarKeyword"
+          >
+            <ul class="flex justify-center">
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-keyword bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="1"
+                  >1</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-keyword bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="2"
+                  >2</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-keyword bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="3"
+                  >3</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-keyword bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="4"
+                  >4</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="pagination-link-keyword bg-lmBgContent px-2 py-1 border border-lmText"
+                  data-page="5"
+                  >5</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- About us Section -->
+          <div class="mt-24 p-10" id="aboutUsSection">
+            <h1 class="text-3xl text-center font-bold mb-10">About Us</h1>
+            <p class="text-justify">
+              Welcome to Dev Detective, a website founded by Saad Sayyed, a
+              passionate web developer. Our platform is designed to help
+              developers and GitHub users connect, collaborate, and discover new
+              projects with ease. Saad created Dev Detective with the vision of
+              building a vibrant community of like-minded individuals who are
+              passionate about coding and technology. Our website is the result
+              of his dedication and hard work, and we are proud to offer a
+              user-friendly interface that makes it easy for users to search and
+              explore GitHub profiles and repositories. Whether you're a
+              seasoned developer or just starting your coding journey, we hope
+              that Dev Detective can be a valuable resource for you. Thank you
+              for visiting our website, and we look forward to helping you
+              navigate the GitHub universe.
+            </p>
+            <br />
+            <p class="text-justify">
+              At Dev Detective, we are committed to providing a secure and
+              reliable platform for our users. That's why we are constantly
+              working to improve our website and implement new features that
+              will enhance your experience. We also believe in open
+              communication, so if you have any feedback or suggestions for us,
+              please don't hesitate to reach out. We value your input and are
+              always looking for ways to improve. Thank you for being a part of
+              the Dev Detective community!
+            </p>
+          </div>
+
+          <!-- Contact us section -->
+          <div
+            class="md:w-[773px] ml-auto mr-auto mt-24 p-10"
+            id="contactUsSection"
+          >
+            <h1 class="text-3xl text-center font-bold mb-2">Contact Us</h1>
+            <form class="flex flex-col" action="#" method="post">
+              <label for="name">Name:</label>
+              <input
+                class="bg-inherit border border-lmText rounded-md mb-2 p-2"
+                type="text"
+                id="name"
+                name="name"
+                required
+              />
+
+              <label for="email">Email Address:</label>
+              <input
+                class="bg-inherit border border-lmText rounded-md mb-2 p-2"
+                type="email"
+                id="email"
+                name="email"
+                required
+              />
+
+              <label for="subject">Subject:</label>
+              <input
+                class="bg-inherit border border-lmText rounded-md mb-2 p-2"
+                type="text"
+                id="subject"
+                name="subject"
+                required
+              />
+
+              <label for="message">Message:</label>
+              <textarea
+                class="bg-inherit border border-lmText rounded-md mb-2 p-2"
+                id="message"
+                name="message"
+                rows="5"
+                required
+              ></textarea>
+
+              <input
+                class="bg-lmText hover:bg-lmTextAlt rounded-lg items-center text-center text-white text-xl cursor-pointer font-bold p-4"
+                type="submit"
+                value="Submit"
+              />
+            </form>
+          </div>
+        </main>
+
+        <footer>
+          <p class="text-center pb-4 p-10" id="footerSection">
+            DevDetective | Developed by : <br class="md:hidden" />
+            <a
+              href="https://github.com/adushaiq"
+              class="text-lmText font-bold"
+              target="_blank"
+            >
+              Saad Sayyed</a
+            >
+          </p>
+        </footer>
+      </div>
+    </div>
+
+    
+  </body>
+</html>
